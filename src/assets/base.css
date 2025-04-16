@@ -1,0 +1,11 @@
+p{
+  @apply text-white;
+}
+.text-grey-color{
+  @apply text-[#B2B2B2];
+}
+footer{
+  @apply bg-[#232F3F] flex flex-col justify-center pt-8 gap-12;
+  padding-right: 260px;
+  padding-left: 260px;
+}
