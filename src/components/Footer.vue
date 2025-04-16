@@ -1,9 +1,16 @@
 <script>
 
+import { defineComponent } from 'vue'
+import SimpleForm from '@/components/SimpleForm.vue'
+
+export default defineComponent({
+  components: { SimpleForm }
+})
 </script>
 <template>
-  <footer >
-      <div class="mx-auto flex justify-between items-center">
+  <footer>
+    <div class="footer-container">
+      <div class="mx-auto flex justify-between items-center w-full">
         <div>
           <p class="text-grey-color">¿Cómo podemos ayudarte?</p>
           <h4 class="text-white text-2xl">Ponte en contacto con
@@ -18,6 +25,7 @@
         </div>
         <div>
           <label class="text-white">Suscríbase a nuestro boletín</label>
+          <SimpleForm class="bg-white border border-red-500" placeholder="Correo" action="Suscribirse" color="bg-red-500" type="email"/>
         </div>
         <div>
           <p>Siguenos</p>
@@ -30,7 +38,7 @@
       </div>
       <div class="flex justify-between items-center">
         <div class="flex flex-col gap-4">
-          <p>Enlaces de interés</p>
+          <p class="font-bold">Enlaces de interés</p>
           <ul class="flex flex-col gap-2">
             <li class="text-grey-color">Inicio</li>
             <li class="text-grey-color">Términos de los Servicios</li>
@@ -38,7 +46,7 @@
           </ul>
         </div>
         <div class="flex flex-col gap-4">
-          <p>Legal</p>
+          <p class="font-bold">Legal</p>
           <ul class="flex flex-col gap-2">
             <li class="text-grey-color">Política de envíos</li>
             <li class="text-grey-color">Política de privacidad</li>
@@ -46,12 +54,20 @@
           </ul>
         </div>
         <div class="flex flex-col gap-4">
-          <p>Pago Seguro</p>
-          <div class="flex justify-between">
-            <p>Card</p><p>Card</p><p>Card</p><p>Card</p>
+          <p class="font-bold">Pago Seguro</p>
+          <div class="flex justify-between gap-1">
+            <img class="image-card object-cover" src="/master-card.png" alt="master-card">
+            <img class="image-card object-cover" src="/visa-card.png" alt="visa-card">
+            <img class="image-card" src="/american-card.png" alt="american-card">
+            <img class="image-card" src="/discover-card.png" alt="discover-card">
+            <img class="image-card" src="/tropipay-card.png" alt="tropipay-card">
           </div>
         </div>
       </div>
-
+    </div>
+    <div class="copyright">
+      <p class="text-grey-color">Copyright © TSO 2023 - Madrid</p>
+    </div>
   </footer>
 </template>
+
