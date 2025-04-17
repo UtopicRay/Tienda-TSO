@@ -1,7 +1,6 @@
 <script>
-
 import { defineComponent } from 'vue'
-import SimpleForm from '@/components/SimpleForm.vue'
+import SimpleForm from '@/components/forms/SimpleForm.vue'
 import IconFacebook from '@/components/icons/IconFacebook.vue'
 import IconInstagram from '@/components/icons/IconInstagram.vue'
 import IconPeoples from '@/components/icons/IconPeoples.vue'
