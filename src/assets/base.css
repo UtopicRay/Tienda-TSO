@@ -1,3 +1,4 @@
+/*Etiquetas*/
 p{
   @apply text-white;
 }
@@ -5,14 +6,32 @@ p{
 footer{
   @apply bg-[#232F3F] flex flex-col justify-center pt-8 gap-12 ;
 }
-.footer-container{
-  @apply flex flex-col xl:gap-12 lg:gap-8 lg:px-24 md:px-48;
+
+
+/*Backgrouds*/
+.bg-light-yellow{
+  @apply bg-[#FCD26D]
 }
+.bg-light-red{
+  @apply bg-[#FBDDE5]
+}
+.bg-light-blue{
+  @apply bg-[#E5EAF0]
+}
+/*Text-Color*/
 .text-grey-color{
   @apply text-[#B2B2B2];
 }
 .text-ambar-color{
   @apply text-[#D09504];
+}
+.text-light-red-2{
+  @apply text-[#DF194C]
+}
+
+/*Estilos de clases*/
+.footer-container{
+  @apply flex flex-col xl:gap-12 lg:gap-8 lg:px-24 md:px-48;
 }
 .copyright{
   @apply py-4 px-44 bg-[#00000040] flex gap-x-12;

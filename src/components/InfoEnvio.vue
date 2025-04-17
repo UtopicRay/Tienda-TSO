@@ -9,7 +9,7 @@ const {element}=defineProps<{element:InfoEnvio}>()
    <component :is="element.svg"></component>
   </div>
   <h5 class="font-bold text-3xl">{{element.title}}</h5>
-  <p class="!text-[#212529;]" >{{element.description}}</p>
+  <p class="!text-[#212529]" >{{element.description}}</p>
 </div>
 </template>
 
