@@ -71,9 +71,9 @@ footer{
   border-radius: 5px;
 }
 .section{
-  @apply flex flex-col py-12 px-[268px] lg:px-24 gap-12
+  @apply flex flex-col py-12 lg:px-24 gap-12 px-4;
 }
 .envio-section{
-  @apply flex flex-col justify-center py-12 px-[268px] lg:px-24 gap-12;
+  @apply flex flex-col justify-center py-12 px-4 lg:px-24 gap-12;
 }
 

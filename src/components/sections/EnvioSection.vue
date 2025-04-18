@@ -8,15 +8,15 @@ const envios=ref<infoE[]>(ConstInfoEnvio)
 </script>
 
 <template>
-<section class="envio-section">
+<section class="section">
 <header class="text-center">
-  <h3 class="text-ambar-color text-[40px] font-bold">Más de 1500 productos en almacén</h3>
-  <h2 class="font-bold 2xl:text-8xl text-7xl">Envíos hacia toda Cuba</h2>
+  <h3 class="text-ambar-color lg:text-[40px] text-xl font-bold">Más de 1500 productos en almacén</h3>
+  <h2 class="font-bold 2xl:text-8xl lg:text-7xl text-[40px]">Envíos hacia toda Cuba</h2>
 </header>
-  <div class="grid grid-cols-3 relative">
-    <div v-for="(envio,i) in envios" :key="i" class="flex gap-12 items-center">
+  <div class="grid lg:grid-cols-3 grid-cols-1 relative">
+    <div v-for="(envio,i) in envios" :key="i" class="flex gap-12 items-center justify-center">
      <InfoEnvio :element="envio"/>
-      <div v-if="i==0||i==1" class="vertical-divider"></div>
+      <div v-if="i==0||i==1" class="vertical-divider hidden lg:block"></div>
     </div>
 
   </div>
