@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ConstInfoEnvio } from '@/constants/ConstInfoEnvio.ts'
-import type { InfoEnvio as infoE} from '@/types'
+import type { InfoEnvio as infoE} from '@/types/types.ts'
 import InfoEnvio from '@/components/InfoEnvio.vue'
 import { ref } from 'vue'
 

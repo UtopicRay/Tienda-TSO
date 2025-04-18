@@ -1,4 +1,4 @@
-import type { InfoEnvio } from '@/types.ts'
+import type { InfoEnvio } from '@/types/types.ts'
 import IconBag from '@/components/icons/IconBag.vue'
 import IconLocation from '@/components/icons/IconLocation.vue'
 import IconCamion from '@/components/icons/IconCamion.vue'

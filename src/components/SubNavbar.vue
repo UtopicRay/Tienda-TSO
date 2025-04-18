@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { NavegationLinks } from '@/constants/NavegationLink.ts'
-import type { NavLink } from '@/types.ts'
+import type { NavLink } from '@/types/types.ts'
 import { ref } from 'vue'
 
 const links = ref<NavLink[]>(NavegationLinks)

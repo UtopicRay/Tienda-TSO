@@ -1,4 +1,4 @@
-import type { NavLink } from '@/types.ts'
+import type { NavLink } from '@/types/types.ts'
 
 export const NavegationLinks:NavLink[] = [{
   to:"home",

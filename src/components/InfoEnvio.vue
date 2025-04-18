@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { InfoEnvio } from '@/types.ts'
+import type { InfoEnvio } from '@/types/types.ts'
 const {element}=defineProps<{element:InfoEnvio}>()
 </script>
 

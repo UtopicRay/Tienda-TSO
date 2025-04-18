@@ -8,3 +8,4 @@ export type NavLink={
   to: string,
   name: string,
 }
+
