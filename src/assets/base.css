@@ -1,4 +1,7 @@
 /*Etiquetas*/
+body{
+  font-family: 'Roboto','Montserrat', sans-serif;
+}
 p{
   @apply text-white;
 }
@@ -21,6 +24,9 @@ footer{
 .bg-light-grey{
   @apply bg-[#CFCECE]
 }
+.bg-light-grey-2{
+  @apply bg-[#FAFAFA]
+}
 /*Border*/
 
 /*Text-Color*/
@@ -38,6 +44,9 @@ footer{
 }
 .text-secundary-blue{
   @apply text-[#232F3F]
+}
+.text-title{
+  @apply text-[#383838] font-bold text-4xl;
 }
 
 /*Estilos de clases*/
@@ -61,6 +70,10 @@ footer{
   height: 50px;
   border-radius: 5px;
 }
+.section{
+  @apply flex flex-col py-12 px-[268px] lg:px-24 gap-12
+}
 .envio-section{
   @apply flex flex-col justify-center py-12 px-[268px] lg:px-24 gap-12;
 }
+

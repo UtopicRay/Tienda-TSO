@@ -8,6 +8,7 @@ export function useFechtData(url:string){
   const loading=ref<boolean>();
 
  async function loadData(){
+   loading.value=true;
    await axios.get(url).then(res=>{
       data.value = res.data
     }).catch(E=>{

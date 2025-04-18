@@ -19,7 +19,7 @@ const {product}=defineProps<{product:Product}>()
       <InfoTag :icon="IconFecha" styles=" z-10 bg-light-blue " color="text-light-red-2" position="right"/>
     </div>
     <div class="relative m-4">
-      <ProductInfoCard />
+      <ProductInfoCard :product="product" />
     </div>
   </div>
 </template>
