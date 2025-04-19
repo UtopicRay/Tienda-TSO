@@ -17,5 +17,3 @@ export const ConstInfoEnvio:InfoEnvio[] = [{
   description: "Contamos con servicios de entrega a lo largo y ancho de la isla. Nuestro interés es que tu gente reciba las compras."
 }]
 
-export const ListIcons = [IconBag,IconLocation]
-console.log(IconBag)

@@ -1,36 +1,33 @@
-<script>
-import { defineComponent } from 'vue'
+<script setup lang="ts">
 import SimpleForm from '@/components/forms/SimpleForm.vue'
 import IconFacebook from '@/components/icons/IconFacebook.vue'
 import IconInstagram from '@/components/icons/IconInstagram.vue'
 import IconPeoples from '@/components/icons/IconPeoples.vue'
 import IconEspañaBrand from '@/components/icons/IconEspañaBrand.vue'
 
-export default defineComponent({
-  components: { IconEspañaBrand, IconPeoples, IconInstagram, IconFacebook, SimpleForm }
-})
 </script>
 <template>
   <footer>
+    <!--Footer Arriba-->
     <div class="footer-container">
-      <div class="grid grid-cols-4 items-center   w-full">
+      <div class="grid lg:grid-cols-4 grid-cols-1 items-center w-full gap-6">
         <div class="mx-auto">
           <p class="text-grey-color">¿Cómo podemos ayudarte?</p>
           <h4 class="text-white text-2xl">Ponte en contacto con
             nosotros en cualquier
             momento</h4>
         </div>
-        <div class="flex flex-col gap-2 mx-auto">
-          <p class="text-white">WhatsApp</p>
-          <p class="text-grey-color">+(34) 624 60 67 70</p>
-          <p class="text-white">Envíanos un mensaje</p>
-          <p class="text-grey-color">contacto@tsotienda.com</p>
+        <div class="flex flex-col gap-2 lg:mx-auto mx-0">
+          <p class="footer-text-1">WhatsApp</p>
+          <p class="footer-text-2">+(34) 624 60 67 70</p>
+          <p class="footer-text-1">Envíanos un mensaje</p>
+          <p class="footer-text-2">contacto@tsotienda.com</p>
         </div>
-        <div class="mx-auto">
+        <div class="lg:mx-auto mx-0">
           <label class="text-white">Suscríbase a nuestro boletín</label>
           <SimpleForm class="bg-white border border-red-500" placeholder="Correo" action="Suscribirse" color="bg-red-500" type="email"/>
         </div>
-        <div class="mx-auto">
+        <div class="lg:mx-auto mx-0">
           <p class="text-grey-color">Siguenos</p>
           <ul class="flex gap-3">
             <li class="text-white"><IconFacebook/></li>
@@ -41,7 +38,8 @@ export default defineComponent({
       </div>
       <!--Divider-->
       <div class="border border-[#1A232F]"></div>
-      <div class="flex justify-between items-center">
+      <!--Footer Abajo-->
+      <div class="grid grid-cols-1 lg:grid-cols-3 items-start gap-6">
         <div class="flex flex-col gap-4">
           <p class="font-bold">Enlaces de interés</p>
           <ul class="flex flex-col gap-2">
@@ -60,7 +58,7 @@ export default defineComponent({
         </div>
         <div class="flex flex-col gap-4">
           <p class="font-bold">Pago Seguro</p>
-          <div class="flex justify-between gap-1">
+          <div class="flex gap-1">
             <img class="image-card object-cover" src="/master-card.png" alt="master-card">
             <img class="image-card object-cover" src="/visa-card.png" alt="visa-card">
             <img class="image-card" src="/american-card.png" alt="american-card">
@@ -77,4 +75,3 @@ export default defineComponent({
     </div>
   </footer>
 </template>
-

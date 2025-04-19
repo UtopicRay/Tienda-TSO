@@ -7,12 +7,14 @@ import VinculadoSection from '@/components/sections/VinculadoSection.vue'
 import RecomendadoSection from '@/components/sections/RecomendadoSection.vue'
 import Banner2 from '@/components/banners/Banner2.vue'
 import CategoriaSection from '@/components/sections/CategoriaSection.vue'
+import CarouselBanner from '@/components/banners/CarouselBanner.vue'
 </script>
 
 <template>
   <main>
-    <CategoriaSection/>
-    <RecomendadoSection/>
+    <CarouselBanner/>
+<!--    <CategoriaSection/>
+   --> <RecomendadoSection/>
     <Banner2/>
     <ProductSection/>
     <VinculadoSection/>

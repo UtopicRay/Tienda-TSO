@@ -1,10 +1,10 @@
 <script setup lang="ts">
-const {title,icon}=defineProps<{title:string,icon:any}>()
+const {title,icon}=defineProps<{title?:string,icon?:any}>()
 </script>
 
 <template>
 <div>
-  <button class="py-3 text-white mx-auto flex gap-1 font-bold text-ambar-color" type="submit">
+  <button class="inline-flex  items-center py-2.5 px-3 ms-2 text-sm font-bold" type="submit">
    <component class="text-ambar-color" :is="icon"/>
   {{title}}</button>
 </div>

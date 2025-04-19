@@ -3,8 +3,9 @@ import { useFechtData } from '@/hooks/useFechtData.ts'
 import Loading from '@/components/Loading.vue'
 import ProductCard from '@/components/product/ProductCard.vue'
 import ErrorAlert from '@/components/ErrorAlert.vue'
+import { baseUrl } from '../../../env.ts'
 
-const {data:products,loading,error}=useFechtData('https://dummyjson.com/products')
+const {data:products,loading,error}=useFechtData(baseUrl)
 </script>
 <template>
 <Loading v-if="loading"/>

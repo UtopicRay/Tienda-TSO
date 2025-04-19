@@ -5,7 +5,7 @@ const {placeholder,type,action,color} = defineProps({ placeholder: String, type:
 <template>
   <form class="relative border rounded-sm border-[#CAD4E2]  flex justify-between">
     <input class="p-3 w-full" :placeholder="placeholder" :type="type" />
-    <button :class="`w-25 py-3 text-white px-4 font-bold `+ color" type="submit">{{action}}</button>
+    <button :class="`py-3 text-white px-4 font-bold `+ color" type="submit">{{action}}</button>
   </form>
 </template>
 

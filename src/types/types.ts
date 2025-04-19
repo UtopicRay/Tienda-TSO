@@ -12,4 +12,8 @@ export type Category = {
   img:string,
   name: string,
 }
+export type Image = {
+  src: string,
+  alt: string,
+}
 

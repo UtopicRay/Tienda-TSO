@@ -55,13 +55,13 @@ footer{
 }
 .footer-container{
   @apply flex flex-col xl:gap-12 lg:gap-8 lg:px-24 px-3 gap-6;
-}
+}/*
 .footer-text-1{
   @apply text-[#B2B2B2] lg:text-white lg:text-md text-sm;
 }
 .footer-text-2{
   @apply lg:text-[#B2B2B2] text-white text-xl;
-}
+}*/
 .product-card{
   @apply  border-[#CFCECE] min-w-[232px] relative max-w-[264px] py-4 border-[0.5px] rounded-sm mx-auto;
 }
@@ -82,4 +82,10 @@ footer{
 .envio-section{
   @apply flex flex-col justify-center py-12 px-4 lg:px-24 gap-12;
 }
-
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
