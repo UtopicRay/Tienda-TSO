@@ -3,6 +3,7 @@ import { ConstInfoEnvio } from '@/constants/ConstInfoEnvio.ts'
 import type { InfoEnvio as infoE} from '@/types/types.ts'
 import InfoEnvio from '@/components/InfoEnvio.vue'
 import { ref } from 'vue'
+import VerticalDivider from '@/components/dividers/VerticalDivider.vue'
 
 const envios=ref<infoE[]>(ConstInfoEnvio)
 </script>
@@ -16,7 +17,7 @@ const envios=ref<infoE[]>(ConstInfoEnvio)
   <div class="grid lg:grid-cols-3 grid-cols-1 relative">
     <div v-for="(envio,i) in envios" :key="i" class="flex gap-12 items-center justify-center">
      <InfoEnvio :element="envio"/>
-      <div v-if="i==0||i==1" class="vertical-divider hidden lg:block"></div>
+      <VerticalDivider v-if="i==0||i==1" class="hidden lg:block"/>
     </div>
 
   </div>

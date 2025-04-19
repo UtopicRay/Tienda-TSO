@@ -1,5 +1,5 @@
 import { onMounted, ref } from 'vue'
-import type { Product } from '@/types/ProductApi.ts'
+import type { Product, ProductAPI } from '@/types/ProductApi.ts'
 import axios from 'axios'
 
 export function useFechtData(url:string){

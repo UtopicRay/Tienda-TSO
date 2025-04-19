@@ -1,10 +1,8 @@
 import type { Image } from '@/types/types.ts'
-import Banner1 from '../../public/banner-img.png'
-import Banner2 from '../../public/banner-2.png'
 export const images:Image[] = [{
-  src:Banner1,
+  src:"/banner-img.png",
   alt:"first-banner",
 },{
-  src:Banner2,
+  src:"/banner-2.png",
   alt:"second-banner",
 }]

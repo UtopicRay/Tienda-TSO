@@ -18,10 +18,10 @@ import IconEspañaBrand from '@/components/icons/IconEspañaBrand.vue'
             momento</h4>
         </div>
         <div class="flex flex-col gap-2 lg:mx-auto mx-0">
-          <p class="footer-text-1">WhatsApp</p>
-          <p class="footer-text-2">+(34) 624 60 67 70</p>
-          <p class="footer-text-1">Envíanos un mensaje</p>
-          <p class="footer-text-2">contacto@tsotienda.com</p>
+          <p class="text-[#B2B2B2] lg:text-white lg:text-md text-sm">WhatsApp</p>
+          <p class="lg:text-[#B2B2B2] text-white text-xl">+(34) 624 60 67 70</p>
+          <p class="text-[#B2B2B2] lg:text-white lg:text-md text-sm">Envíanos un mensaje</p>
+          <p class="lg:text-[#B2B2B2] text-white text-xl">contacto@tsotienda.com</p>
         </div>
         <div class="lg:mx-auto mx-0">
           <label class="text-white">Suscríbase a nuestro boletín</label>
@@ -41,7 +41,7 @@ import IconEspañaBrand from '@/components/icons/IconEspañaBrand.vue'
       <!--Footer Abajo-->
       <div class="grid grid-cols-1 lg:grid-cols-3 items-start gap-6">
         <div class="flex flex-col gap-4">
-          <p class="font-bold">Enlaces de interés</p>
+          <p class="font-bold text-white">Enlaces de interés</p>
           <ul class="flex flex-col gap-2">
             <li class="text-grey-color">Inicio</li>
             <li class="text-grey-color">Términos de los Servicios</li>
@@ -49,7 +49,7 @@ import IconEspañaBrand from '@/components/icons/IconEspañaBrand.vue'
           </ul>
         </div>
         <div class="flex flex-col gap-4">
-          <p class="font-bold">Legal</p>
+          <p class="font-bold text-white">Legal</p>
           <ul class="flex flex-col gap-2">
             <li class="text-grey-color">Política de envíos</li>
             <li class="text-grey-color">Política de privacidad</li>
@@ -57,7 +57,7 @@ import IconEspañaBrand from '@/components/icons/IconEspañaBrand.vue'
           </ul>
         </div>
         <div class="flex flex-col gap-4">
-          <p class="font-bold">Pago Seguro</p>
+          <p class="font-bold text-white">Pago Seguro</p>
           <div class="flex gap-1">
             <img class="image-card object-cover" src="/master-card.png" alt="master-card">
             <img class="image-card object-cover" src="/visa-card.png" alt="visa-card">
@@ -70,8 +70,9 @@ import IconEspañaBrand from '@/components/icons/IconEspañaBrand.vue'
     </div>
     <div class="copyright">
       <p class="text-grey-color">Copyright © TSO 2023 - Madrid</p>
-      <p>Español</p>
+      <p class="text-white">Español</p>
       <IconEspañaBrand/>
     </div>
   </footer>
 </template>
+

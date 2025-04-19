@@ -11,7 +11,7 @@ initFlowbite()
   <div id="default-carousel" class="relative w-full" data-carousel="slide">
     <!-- Carousel wrapper -->
     <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-      <!--      Carousel Items-->
+<!--            Carousel Items-->
       <div
         class="hidden duration-700 ease-in-out"
         data-carousel-item

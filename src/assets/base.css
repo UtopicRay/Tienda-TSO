@@ -29,6 +29,9 @@ footer {
 .bg-light-grey-2 {
   @apply bg-[#FAFAFA];
 }
+.bg-light-blue-2{
+  @apply bg-[#4F6A8E];
+}
 
 /*Border*/
 
@@ -53,13 +56,18 @@ footer {
 .text-neutral-1 {
   @apply text-[#212529];
 }
-
+.text-neutral-2{
+  @apply text-[#343434]
+}
 .text-secundary-blue {
   @apply text-[#232F3F];
 }
 
 .text-title {
   @apply text-[#383838] font-bold text-4xl;
+}
+.text-blue-3{
+  @apply text-[#4F6A8E];
 }
 
 /*Estilos de clases*/
@@ -72,14 +80,16 @@ footer {
   @apply flex flex-col xl:gap-12 lg:gap-8 lg:px-24 px-3 gap-6;
 }
 
-/*
 .footer-text-1{
   @apply text-[#B2B2B2] lg:text-white lg:text-md text-sm;
 }
 .footer-text-2{
   @apply lg:text-[#B2B2B2] text-white text-xl;
-}*/
+}
 
+.product-details{
+  @apply flex flex-col gap-8;
+}
 .product-card {
   @apply border-[#CFCECE] relative py-4 border-[0.5px] rounded-sm mx-auto;
 }
