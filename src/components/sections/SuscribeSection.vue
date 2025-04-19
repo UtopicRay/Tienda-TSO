@@ -42,11 +42,11 @@ import SimpleForm from '@/components/forms/SimpleForm.vue'
       </defs>
     </svg>
   </div>
-  <div class="flex justify-center items-center w-full">
-    <div class="flex flex-col p-12 gap-13 card  border border-gray-200 rounded-sm card">
+  <div class="flex justify-center items-center w-full px-4">
+    <div class="flex flex-col lg:p-12 py-6 px-4 gap-13 card  border border-gray-200 rounded-sm card">
       <div class="text-center">
-        <h3 class="font-bold">Suscríbete a nuestro boletín</h3>
-        <p class="">Mantente al tanto de todas las novedades ofertas y descuentos. ¡Suscríbete!</p>
+        <h3 class="text-[#D09504] font-bold text-xl lg:text-4xl">Suscríbete a nuestro boletín</h3>
+        <p class="text-neutral-1 text-sm lg:text-md">Mantente al tanto de todas las novedades ofertas y descuentos. ¡Suscríbete!</p>
       </div>
       <SimpleForm placeholder="Correo electrónico" type="email" action="Suscribirse" color="bg-[#4F6A8E]"></SimpleForm>
     </div>
@@ -55,12 +55,7 @@ import SimpleForm from '@/components/forms/SimpleForm.vue'
 </template>
 
 <style scoped>
-h3{
-  @apply text-[#D09504] text-[40px];
-}
-p{
-  @apply text-[#212529];
-}
+
 .card{
   background-color: #FFFFFFB2;
   backdrop-filter: blur(4px);
