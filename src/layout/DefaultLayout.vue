@@ -3,6 +3,7 @@ import FooterPage from '@/components/FooterPage.vue'
 import Navbar from '@/components/navbar/Navbar.vue'
 import SubNavbar from '@/components/navbar/SubNavbar.vue'
 import SmallNavbar from '@/components/navbar/SmallNavbar.vue'
+import NavFooter from '@/components/navbar/NavFooter.vue'
 </script>
 
 <template>
@@ -13,4 +14,5 @@ import SmallNavbar from '@/components/navbar/SmallNavbar.vue'
     <slot/>
   </main>
   <FooterPage/>
+  <NavFooter/>
 </template>
