@@ -1,90 +1,115 @@
 /*Etiquetas*/
-body{
-  font-family: 'Roboto','Montserrat', sans-serif;
-}
-footer{
-  @apply bg-[#232F3F] flex flex-col justify-center pt-8 gap-12 ;
+
+body {
+  font-family: 'Roboto', 'Montserrat', sans-serif;
 }
 
+footer {
+  @apply bg-[#232F3F] flex flex-col justify-center pt-8 gap-12;
+}
 
 /*Backgrouds*/
-.bg-light-yellow{
-  @apply bg-[#FCD26D]
+
+.bg-light-yellow {
+  @apply bg-[#FCD26D];
 }
-.bg-light-red{
-  @apply bg-[#FBDDE5]
+
+.bg-light-red {
+  @apply bg-[#FBDDE5];
 }
-.bg-light-blue{
-  @apply bg-[#E5EAF0]
+
+.bg-light-blue {
+  @apply bg-[#E5EAF0];
 }
-.bg-light-grey{
-  @apply bg-[#CFCECE]
+
+.bg-light-grey {
+  @apply bg-[#CFCECE];
 }
-.bg-light-grey-2{
-  @apply bg-[#FAFAFA]
+
+.bg-light-grey-2 {
+  @apply bg-[#FAFAFA];
 }
+
 /*Border*/
 
 /*Text-Color*/
-.text-grey-color{
+
+.text-grey-color {
   @apply text-[#B2B2B2];
 }
-.text-ambar-color{
+
+.text-ambar-color {
   @apply text-[#D09504];
 }
-.text-light-red-2{
-  @apply text-[#DF194C]
+
+.text-light-red-2 {
+  @apply text-[#DF194C];
 }
-.text-neutral{
+
+.text-neutral {
   @apply text-[#4E4949];
 }
 
 .text-neutral-1 {
-  @apply text-[#212529]
+  @apply text-[#212529];
 }
-.text-secundary-blue{
-  @apply text-[#232F3F]
+
+.text-secundary-blue {
+  @apply text-[#232F3F];
 }
-.text-title{
+
+.text-title {
   @apply text-[#383838] font-bold text-4xl;
 }
 
 /*Estilos de clases*/
-.button-number{
+
+.button-number {
   @apply bg-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:border-gray-600 hover:bg-gray-200 border border-gray-300 rounded-sm p-2.5 h-8 focus:ring-gray-100 dark:focus:ring-gray-700 focus:ring-2 focus:outline-none;
 }
-.footer-container{
+
+.footer-container {
   @apply flex flex-col xl:gap-12 lg:gap-8 lg:px-24 px-3 gap-6;
-}/*
+}
+
+/*
 .footer-text-1{
   @apply text-[#B2B2B2] lg:text-white lg:text-md text-sm;
 }
 .footer-text-2{
   @apply lg:text-[#B2B2B2] text-white text-xl;
 }*/
-.product-card{
-  @apply  border-[#CFCECE] min-w-[232px] relative max-w-[264px] py-4 border-[0.5px] rounded-sm mx-auto;
+
+.product-card {
+  @apply border-[#CFCECE] relative py-4 border-[0.5px] rounded-sm mx-auto;
 }
-.footer-card{
+
+.footer-card {
   @apply flex gap-2 justify-start items-start;
 }
-.copyright{
+
+.copyright {
   @apply py-4 lg:px-44 px-4 bg-[#00000040] flex lg:gap-x-12 gap-x-1;
 }
-.image-card{
+
+.image-card {
   width: 80px;
   height: 50px;
   border-radius: 5px;
 }
-.section{
-  @apply flex flex-col py-12 lg:px-24 gap-12 px-4;
+
+.section {
+  @apply flex flex-col py-12 lg:px-24 gap-12 px-4 justify-center items-center lg:justify-start lg:items-start ;
 }
-.envio-section{
+
+.envio-section {
   @apply flex flex-col justify-center py-12 px-4 lg:px-24 gap-12;
 }
+
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
 .no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;

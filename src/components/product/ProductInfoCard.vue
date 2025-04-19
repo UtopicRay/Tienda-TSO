@@ -4,11 +4,13 @@ import type { Product } from '@/types/ProductApi.ts'
 import { computed } from 'vue'
 
 const { product } = defineProps<{ product: Product }>()
-const discountPrice:number=computed(()=>(product.price-(product.price*product.discountPercentage)/100))
+const discountPrice: number = computed(
+  () => product.price - (product.price * product.discountPercentage) / 100,
+)
 </script>
 
 <template>
-  <div class="flex flex-col gap-4">
+  <div class="grid lg:grid-cols-1 grid-cols-2 items-center">
     <div class="relative">
       <img
         :src="product?.images[0]"
