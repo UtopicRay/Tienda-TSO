@@ -59,11 +59,11 @@ import IconEspañaBrand from '@/components/icons/IconEspañaBrand.vue'
         <div class="flex flex-col gap-4">
           <p class="font-bold text-white">Pago Seguro</p>
           <div class="flex gap-1">
-            <img class="image-card object-cover" src="/master-card.png" alt="master-card">
-            <img class="image-card object-cover" src="/visa-card.png" alt="visa-card">
-            <img class="image-card" src="/american-card.png" alt="american-card">
-            <img class="image-card" src="/discover-card.png" alt="discover-card">
-            <img class="image-card" src="/tropipay-card.png" alt="tropipay-card">
+            <img class="image-card object-cover" src="/master-card.webp" alt="master-card">
+            <img class="image-card object-cover" src="/visa-card.webp" alt="visa-card">
+            <img class="image-card" src="/american-card.webp" alt="american-card">
+            <img class="image-card" src="/discover-card.webp" alt="discover-card">
+            <img class="image-card" src="/tropipay-card.webp" alt="tropipay-card">
           </div>
         </div>
       </div>
