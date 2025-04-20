@@ -6,7 +6,7 @@ import VerTodosProductos from '@/components/VerTodosProductos.vue'
 
 <template>
 <section class="section">
-  <div class="grid grid-cols-9 gap-12">
+  <div class="lg:grid grid-cols-9 gap-12 hidden">
     <CategoryInfo :category="categoria" v-for="categoria in Categorias" :key="categoria.img" />
   </div>
   <VerTodosProductos/>
