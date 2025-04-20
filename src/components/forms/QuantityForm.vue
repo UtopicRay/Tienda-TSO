@@ -5,7 +5,7 @@ initFlowbite()
 </script>
 
 <template>
-  <form class="max-w-xs rounded-sm  bg-light-grey">
+  <form class="max-w-xs  rounded-sm  bg-light-grey">
     <div class="relative flex items-center max-w-[105px]">
       <button type="button" id="decrement-button" data-input-counter-decrement="quantity-input" class="button-number">
         <svg class="w-3 h-3 text-gray-900 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 2">

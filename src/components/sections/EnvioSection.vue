@@ -4,12 +4,14 @@ import type { InfoEnvio as infoE} from '@/types/types.ts'
 import InfoEnvio from '@/components/InfoEnvio.vue'
 import { ref } from 'vue'
 import VerticalDivider from '@/components/dividers/VerticalDivider.vue'
+import { useSectionObserver } from '@/hooks/useSectionObserver.ts'
 
 const envios=ref<infoE[]>(ConstInfoEnvio)
+const {element}=useSectionObserver()
 </script>
 
 <template>
-<section class="section">
+<section ref="element" class="section section-observer">
 <header class="text-center flex flex-col justify-center items-center w-full">
   <h3 class="text-ambar-color lg:text-[40px] text-xl font-bold">Más de 1500 productos en almacén</h3>
   <h2 class="font-bold 2xl:text-8xl lg:text-7xl text-[40px]">Envíos hacia toda Cuba</h2>

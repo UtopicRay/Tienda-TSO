@@ -1,5 +1,4 @@
 <script setup lang="ts">
-
 import CategoryInfo from '@/components/CategoryInfo.vue'
 import { Categorias } from '@/constants/Categorias.ts'
 import VerTodosProductos from '@/components/VerTodosProductos.vue'

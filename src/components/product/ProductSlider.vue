@@ -1,18 +1,18 @@
 <script setup lang="ts">
 import ProductCard from '@/components/product/ProductCard.vue'
-import Loading from '@/components/Loading.vue'
 import ErrorAlert from '@/components/ErrorAlert.vue'
 import { useProductStore } from '@/stores/product.ts'
+import CardSkeleton from '@/components/skeletons/CardSkeleton.vue'
 
 const {products,error,loading}=useProductStore()
 </script>
 
 <template>
-  <Loading v-if="loading&&!products" />
+  <CardSkeleton v-if="loading&&!products" />
   <div class="flex justify-center">
     <div class="relative w-full max-w-screen-xl overflow-hidden">
       <!-- Slider Wrapper -->
-      <div class="flex flex-col lg:flex-row overflow-x-auto scroll-smooth gap-4 md:gap-6 lg:gap-8 px-4 py-6">
+      <div class="flex flex-col lg:flex-row overflow-x-auto scroll-smooth gap-4 md:gap-6 lg:gap-8 px-2 py-6 lg:px-4">
         <ProductCard
           :product="product"
           v-for="product in products?.slice(0, 10)"

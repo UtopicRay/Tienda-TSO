@@ -13,8 +13,8 @@ import CarouselBanner from '@/components/banners/CarouselBanner.vue'
 <template>
   <main>
     <CarouselBanner/>
-<!--    <CategoriaSection/>
-   --> <RecomendadoSection/>
+<!--    <CategoriaSection/>-->
+    <RecomendadoSection/>
     <Banner2/>
     <ProductSection/>
     <VinculadoSection/>

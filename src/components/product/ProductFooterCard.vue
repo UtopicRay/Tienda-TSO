@@ -9,7 +9,7 @@ import QuantityForm from '@/components/forms/QuantityForm.vue'
     <QuantityForm />
     <ButtonBase
       title="Añadir"
-      class="w-24 bg-light-yellow rounded-sm"
+      class="max-w-24 bg-light-yellow rounded-sm"
       :icon="IconShopCar"
     ></ButtonBase>
   </div>

@@ -80,13 +80,6 @@ footer {
   @apply flex flex-col xl:gap-12 lg:gap-8 lg:px-24 px-3 gap-6;
 }
 
-.footer-text-1{
-  @apply text-[#B2B2B2] lg:text-white lg:text-md text-sm;
-}
-.footer-text-2{
-  @apply lg:text-[#B2B2B2] text-white text-xl;
-}
-
 .product-details{
   @apply flex flex-col gap-8;
 }
@@ -95,7 +88,7 @@ footer {
 }
 
 .footer-card {
-  @apply flex gap-2 justify-start items-start;
+  @apply flex flex-col md:flex-row  gap-2 justify-start items-start;
 }
 
 .copyright {
@@ -123,4 +116,206 @@ footer {
 .no-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+/*Section Observer*/
+.section-observer {
+  opacity: 0;
+  transition:
+    opacity 0.8s ease-out,
+    transform 0.8s ease-out;
+  transform: translateY(30px);
+}
+
+.section-observer.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animaciones generales */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* Clases de animación */
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+.animate-slide-in {
+  animation: slideIn 0.5s ease-out forwards;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.3s ease-out forwards;
+}
+
+.animate-rotate {
+  animation: rotate 1s linear infinite;
+}
+
+
+/* Transiciones */
+
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+
+/* Hover effects */
+
+.hover-scale {
+  transition: transform 0.2s ease-in-out;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+
+/* Loading animation */
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+
+/* Carousel transitions */
+
+.carousel-transition {
+  transition: transform 0.7s ease-in-out;
+}
+
+
+/* Button hover effects */
+
+.button-hover {
+  transition: all 0.3s ease;
+}
+
+.button-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+
+/* Info card animations */
+
+.info-card {
+  transition: all 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+
+/* Category animations */
+
+.category-item {
+  transition: all 0.3s ease;
+}
+
+.category-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+
+/* Loading spinner */
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+
+/* Fade in up animation */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+
+/* Bounce animation */
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-bounce {
+  animation: bounce 1s infinite;
 }

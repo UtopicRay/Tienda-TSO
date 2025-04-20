@@ -17,6 +17,7 @@ const discountPrice = computed(
 <template>
   <div class="product-details">
     <div class="flex flex-col gap-4">
+      <p class="underline">{{productDetail?.tags[0]}}</p>
       <h2 class="text-5xl font-bold">{{ productDetail?.title }}</h2>
       <div class="flex gap-2 items-center">
         <p class="font-bold text-secundary-blue text-lg" v-if="discountPrice">
@@ -34,12 +35,12 @@ const discountPrice = computed(
     <div class="flex justify-center items-center py-2 px-3 border-[0.5px] border-[#E4E4E4]">
       <div class="flex gap-2 justify-center items-center">
         <IconCamionRed />
-        <p class="font-bold">3.4USD</p>
-        <p class="text-neutral">/ {{ productDetail?.shippingInformation }}</p>
+        <p class="font-bold text-[12px]">3.4USD</p>
+        <p class="text-neutral text-[12px]">/ 6~7 días</p>
       </div>
       <VerticalDivider />
       <div class="divider mx-2"></div>
-      <p class="text-neutral">
+      <p class="text-neutral text-[12px]">
         <span class="text-blue-3 font-bold">¡Gratis</span>para más de
         <span class="text-blue-3 font-bold">24 USD!</span>
       </p>
@@ -48,17 +49,17 @@ const discountPrice = computed(
       <p class="text-neutral-2">Cantidad</p>
       <QuantityForm class="w-24" />
     </div>
-    <div class="flex gap-8 w-full justify-between">
+    <div class="flex flex-col md:flex-row gap-8 w-full text-center">
       <ButtonBase
         :icon="IconShopCar"
-        styles="gap-2.5 !w-full"
-        class="bg-light-yellow text-ambar-color rounded-sm"
+        styles="gap-2.5 !w-full "
+        class="bg-light-yellow text-ambar-color rounded-sm justify-center"
         title="Añadir al carrito"
       />
       <ButtonBase
         :icon="IconHeart"
-        styles="gap-2.5 !w-full"
-        class="bg-light-blue-2 text-white rounded-sm"
+        styles="gap-2.5 !w-full justify-center "
+        class="bg-light-blue-2 text-white rounded-sm justify-center"
         title="Añadir a favoritos"
       />
     </div>

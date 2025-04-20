@@ -4,12 +4,12 @@ import { useFechtData } from '@/hooks/useFechtData.ts'
 import { baseUrl } from '../../env.ts'
 
 export const useProductStore = defineStore('product', () => {
-  const products = ref(localStorage.getItem('products'))
+  const products = ref(JSON.parse(localStorage.getItem('products') || '[]'))
   const { data, loading, error } = useFechtData(baseUrl)
   watch(data, () => {
     if (!localStorage.getItem('products')) {
       products.value = data.value?.products
-      localStorage.setItem('products', JSON.stringify(products))
+      localStorage.setItem('products', JSON.stringify(products.value))
     }
   })
 

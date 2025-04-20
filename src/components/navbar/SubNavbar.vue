@@ -10,7 +10,7 @@ const links = ref<NavLink[]>(NavegationLinks)
   <div class="bg-[#E5EAF0] py-4 w-full lg:block hidden">
     <ul class="flex gap-6 justify-center items-center ">
       <li v-for="(link,i) in links" :key="i">
-        <RouterLink :to="link.to" class="text-[#7A7474]">{{link.name}}</RouterLink>
+        <RouterLink :to="link.to" class="text-[#7A7474]" aria-current="page">{{link.name}}</RouterLink>
       </li>
     </ul>
   </div>
