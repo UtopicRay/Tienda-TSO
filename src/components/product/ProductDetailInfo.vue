@@ -38,8 +38,11 @@ const discountPrice = computed(
         <p class="font-bold text-[12px]">3.4USD</p>
         <p class="text-neutral text-[12px]">/ 6~7 días</p>
       </div>
-      <VerticalDivider />
-      <div class="divider mx-2"></div>
+      <div class="mx-2">
+        <svg width="1" height="18" viewBox="0 0 1 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0.5 1L0.500001 17" stroke="#E4E4E4" stroke-linecap="round"/>
+        </svg>
+      </div>
       <p class="text-neutral text-[12px]">
         <span class="text-blue-3 font-bold">¡Gratis</span>para más de
         <span class="text-blue-3 font-bold">24 USD!</span>
