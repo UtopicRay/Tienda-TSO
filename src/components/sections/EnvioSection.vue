@@ -10,7 +10,7 @@ const envios=ref<infoE[]>(ConstInfoEnvio)
 
 <template>
 <section class="section">
-<header class="text-center">
+<header class="text-center flex flex-col justify-center items-center w-full">
   <h3 class="text-ambar-color lg:text-[40px] text-xl font-bold">Más de 1500 productos en almacén</h3>
   <h2 class="font-bold 2xl:text-8xl lg:text-7xl text-[40px]">Envíos hacia toda Cuba</h2>
 </header>
