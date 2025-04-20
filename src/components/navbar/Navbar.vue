@@ -9,7 +9,7 @@ import IconShopCar from '@/components/icons/IconShopCar.vue'
   <nav class="grid grid-cols-3 py-6 w-full">
     <div class="flex justify-center items-center gap-5">
       <a href="/">
-        <img src="/tso-tienda.png" alt="tienda-img" class="max-w-[180px] h-[40px]" />
+        <img src="/tso-tienda.webp" alt="tienda-img" class="max-w-[180px] h-[40px]" />
       </a>
       <div class="flex justify-center items-center gap-3">
         <IconLocationYellow />
