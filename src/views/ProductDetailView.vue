@@ -8,6 +8,7 @@ import ProductDetailInfo from '@/components/product/ProductDetailInfo.vue'
 import ProductDetailImages from '@/components/product/ProductDetailImages.vue'
 import SimilaresSection from '@/components/sections/SimilaresSection.vue'
 import DetailSkeleton from '@/components/skeletons/DetailSkeleton.vue'
+import ErrorAlert from '@/components/ErrorAlert.vue'
 
 const router = useRoute()
 const { data: product, loading, error } = useFechtData(`${baseUrl}/${router.params.id}`)

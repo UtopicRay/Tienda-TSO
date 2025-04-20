@@ -8,7 +8,9 @@ import IconShopCar from '@/components/icons/IconShopCar.vue'
 <template>
   <nav class="grid grid-cols-3 py-6 w-full">
     <div class="flex justify-center items-center gap-5">
-      <img src="/tso-tienda.png" alt="tienda-img" class="max-w-[180px] h-[40px]" />
+      <a href="/">
+        <img src="/tso-tienda.png" alt="tienda-img" class="max-w-[180px] h-[40px]" />
+      </a>
       <div class="flex justify-center items-center gap-3">
         <IconLocationYellow />
         <div>

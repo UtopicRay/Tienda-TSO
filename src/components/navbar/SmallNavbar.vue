@@ -8,7 +8,9 @@ import IconSearch from '@/components/icons/IconSearch.vue'
 <template>
 <nav class="flex flex-col px-2 py-3 gap-2">
   <div class="flex justify-between items-center">
-    <img src="/tso-tienda.png" alt="tienda-img" class="max-w-[180px] h-[40px]" />
+    <a href="#">
+      <img src="/tso-tienda.png" alt="tienda-img" class="max-w-[180px] h-[40px]" />
+    </a>
     <SelectForm class="w-[20%]"/>
   </div>
   <div class="flex justify-between items-center gap-2">
