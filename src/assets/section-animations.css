@@ -1,0 +1,111 @@
+/* Animaciones para secciones */
+
+@keyframes sectionFadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes sectionSlideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes sectionSlideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes sectionScaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes sectionFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Clases de animación para secciones */
+
+.section-animate-fade-in-up {
+  opacity: 0;
+  animation: sectionFadeInUp 0.8s ease-out forwards;
+}
+
+.section-animate-slide-in-left {
+  opacity: 0;
+  animation: sectionSlideInLeft 0.8s ease-out forwards;
+}
+
+.section-animate-slide-in-right {
+  opacity: 0;
+  animation: sectionSlideInRight 0.8s ease-out forwards;
+}
+
+.section-animate-scale-in {
+  opacity: 0;
+  animation: sectionScaleIn 0.8s ease-out forwards;
+}
+
+.section-animate-fade-in {
+  opacity: 0;
+  animation: sectionFadeIn 0.8s ease-out forwards;
+}
+
+/* Retrasos para animaciones en cascada */
+
+.section-animate-delay-100 {
+  animation-delay: 100ms;
+}
+
+.section-animate-delay-200 {
+  animation-delay: 200ms;
+}
+
+.section-animate-delay-300 {
+  animation-delay: 300ms;
+}
+
+.section-animate-delay-400 {
+  animation-delay: 400ms;
+}
+
+/* Configuración de Intersection Observer */
+
+.section-observer {
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+}
+
+.section-observer.visible {
+  opacity: 1;
+}
+
