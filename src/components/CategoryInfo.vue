@@ -7,11 +7,18 @@ const {category}=defineProps<{category:Category}>()
 <template>
 <div class="flex flex-col justify-center items-center gap-3 category-item animate-fade-in">
   <img :src="category.img" :alt="`category-${category.name}`" class="object-cover max-w-full h-auto hover-scale"/>
-  <p class="font-semibold text-[#0B0A0A] text-ellipsis text-center">{{category.name.toUpperCase()}}</p>
+  <p class="font-semibold text-[#0B0A0A] text-center">{{category.name.toUpperCase()}}</p>
 </div>
 </template>
 
 <style scoped>
+p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 120px; /* Ajusta según el tamaño del contenedor */
+}
+
 .category-item {
   transition: all 0.3s ease;
 }

@@ -16,6 +16,7 @@ import Mascotas from '../../public/category/mascotas.png'
 import Pescados from '../../public/category/pescados.png'
 import Transporte from '../../public/category/transporte.png'
 import Regalo from '../../public/category/regalo.png'
+import Moda from '../../public/category/moda.png'
 
 export const Categorias: Category[] = [
   {
@@ -29,10 +30,6 @@ export const Categorias: Category[] = [
   {
     img: Bebidas,
     name: 'BEBIDAS ALCOHÓLICAS',
-  },
-  {
-    img: Preelaborados,
-    name: 'ALIMENTOS PREELABORADOS',
   },
   {
     img: BebidaSinH,
@@ -69,6 +66,10 @@ export const Categorias: Category[] = [
   {
     img: Limpieza,
     name: 'LIMPIEZA Y ÚTILES',
+  },
+  {
+    img: Moda,
+    name: 'MODA y ACCESORIOS',
   },
   {
     img: Congelados,
