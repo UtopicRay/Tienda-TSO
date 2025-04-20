@@ -10,7 +10,7 @@ const { product } = defineProps<{ product: Product }>()
 </script>
 
 <template>
-  <RouterLink :to="`product/${product.id}`" class="product-card">
+  <a :href="`/product/${product.id}`" class="product-card">
     <div class="z-10 absolute flex flex-col gap-1">
       <InfoTag
         :title="`-${product?.discountPercentage.toPrecision(2) }%`"
@@ -44,7 +44,7 @@ const { product } = defineProps<{ product: Product }>()
     <div class="relative md:m-4 m-0">
       <ProductInfoCard :product="product" />
     </div>
-  </RouterLink>
+  </a>
 </template>
 
 <style scoped></style>
